@@ -4,48 +4,37 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#fff">
-   <LinearLayout android:id="@+id/titlebg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="90dip" android:layout_marginTop="10dip" android:gravity="center">
-		<ImageView android:src="@drawable/miui_title" android:layout_width="fill_parent" android:layout_height="wrap_content"/>		
+   <LinearLayout android:id="@+id/titlebg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="90dip" android:layout_marginTop="10dip" android:gravity="center">		
 	</LinearLayout>
     <ViewFlipper android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/switcher" android:background="#fff">
-	    <LinearLayout android:orientation="vertical"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:padding="20dip"
-	    android:background="#ccc">
-			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:gravity="center_horizontal" android:orientation="vertical">
-				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_ROMs" android:gravity="center_horizontal" android:shadowColor="#000" android:shadowRadius="0.5" android:textSize="16sp" android:textColor="#fff"/>
-				<LinearLayout android:id="@+id/found" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:layout_marginTop="15dip">
-					<TextView android:id="@+id/ultimaVersionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lastVersion" android:visibility="gone"></TextView>
-					<TextView android:id="@+id/ultimaVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:visibility="gone"></TextView>                
-                   <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/romsOnline" android:clickable="false"></Spinner>	
-                   			
-				</LinearLayout>			
-				<Button android:id="@+id/check_updates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkUpdate_button" android:layout_marginTop="20dip"></Button>
-			</LinearLayout>
-		</LinearLayout>
-		<LinearLayout android:orientation="vertical"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:padding="20dip"
-	    android:background="#fff">
-			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:gravity="center_horizontal" android:orientation="vertical">
-				<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_patches" android:gravity="center_horizontal" android:textColor="#000" android:shadowColor="#000" android:shadowRadius="0.5" android:textSize="16sp"/>
-				<LinearLayout android:id="@+id/foundPatch" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:layout_marginTop="15dip">
-					<Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/parches" android:clickable="false"></Spinner>
-				</LinearLayout>
-				<Button android:id="@+id/check_parches" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searchForPatches_button" android:layout_marginTop="20dip"></Button>
-			</LinearLayout>
-		</LinearLayout>
-		<LinearLayout android:orientation="vertical"
-	    android:layout_width="fill_parent"
-	    android:layout_height="fill_parent"
-	    android:background="#fff"
-	    android:padding="20dip">
-	    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/header_offline" android:gravity="center_horizontal" android:textColor="#000" android:shadowColor="#000" android:shadowRadius="0.5" android:textSize="16sp"/>
-	    <Spinner android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/romsOffline" android:layout_marginTop="15dip"></Spinner>
-	    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ApplyUpdate" android:text="@string/applyUpdate" android:layout_gravity="center_horizontal" android:layout_marginTop="10dip"></Button>
-		</LinearLayout>
+        <LinearLayout android:layout_height="match_parent" android:padding="20dip" android:background="#ccc" android:layout_width="fill_parent" android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/miui_title" android:layout_width="wrap_content"></ImageView>
+            <LinearLayout android:id="@+id/linearLayout1" android:gravity="center_horizontal" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+                <TextView android:textSize="16sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:shadowColor="#000" android:text="@string/header_ROMs" android:textColor="#fff" android:shadowRadius="0.5" android:gravity="center_horizontal"></TextView>
+                <LinearLayout android:id="@+id/found" android:gravity="center_horizontal" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dip">
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/lastVersion" android:visibility="gone" android:id="@+id/ultimaVersionTitle"></TextView>
+                    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:visibility="gone" android:id="@+id/ultimaVersion"></TextView>
+                    <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/romsOnline" android:clickable="false"></Spinner>
+                </LinearLayout>
+                <Button android:id="@+id/check_updates" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="20dip" android:text="@string/checkUpdate_button"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_height="fill_parent" android:padding="20dip" android:background="#ccc" android:layout_width="fill_parent" android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/miui_title" android:layout_width="wrap_content"></ImageView>
+            <LinearLayout android:id="@+id/linearLayout3" android:gravity="center_horizontal" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+                <TextView android:textSize="16sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:shadowColor="#000" android:text="@string/header_patches" android:textColor="#000" android:shadowRadius="0.5" android:gravity="center_horizontal"></TextView>
+                <LinearLayout android:id="@+id/foundPatch" android:gravity="center_horizontal" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="15dip">
+                    <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/parches" android:clickable="false"></Spinner>
+                </LinearLayout>
+                <Button android:id="@+id/check_parches" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="20dip" android:text="@string/searchForPatches_button"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_height="fill_parent" android:padding="20dip" android:layout_width="fill_parent" android:orientation="vertical" android:background="#ccc">
+            <ImageView android:layout_height="wrap_content" android:src="@drawable/miui_title" android:layout_width="wrap_content"></ImageView>
+            <TextView android:textSize="16sp" android:layout_height="wrap_content" android:layout_width="fill_parent" android:shadowColor="#000" android:text="@string/header_offline" android:textColor="#000" android:shadowRadius="0.5" android:gravity="center_horizontal"></TextView>
+            <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/romsOffline" android:layout_marginTop="15dip"></Spinner>
+            <Button android:id="@+id/ApplyUpdate" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dip" android:layout_gravity="center_horizontal" android:text="@string/applyUpdate"></Button>
+        </LinearLayout>
 	</ViewFlipper>
 	<LinearLayout android:id="@+id/dots" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="90dip" android:layout_marginTop="10dip" android:gravity="center">
 		<ImageView android:id="@+id/dot1" style="@style/dot_normal"/>		
