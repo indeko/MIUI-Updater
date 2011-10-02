@@ -45,5 +45,4 @@
     <string name="recoveryInUse">Which recovery are you using?</string>
     <string name="changeRecovery">Change recovery:</string>
     <string name="changeRecoverySummary">Change recovery in use</string>
-    <string name="changelog_slider">Changelog &amp; Download</string>
 </resources>
