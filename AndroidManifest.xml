@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="org.miuigermany">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:screenOrientation="portrait" android:name="org.miuigermany.ui.Principal"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.settings.SYSTEM_UPDATE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:screenOrientation="portrait" android:name="org.miuigermany.preferences.Ajustes">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+		<activity android:screenOrientation="portrait" android:name=".ui.Sobre">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+		
+		<service android:name=".services.DownloadService"
+                 android:process="org.miuigermany.services.DownloadService">
+            <intent-filter>
+                <action android:name="DownloadManager.ACTION_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </service>
+    </application>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-sdk android:targetSdkVersion="10" android:maxSdkVersion="10" android:minSdkVersion="10"></uses-sdk>
+    
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#eee"
+  android:padding="10dip">
+    <TextView android:text="@string/aboutApp" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:textColor="#333" android:layout_margin="10dip"></TextView>
+    <WebView android:id="@+id/webView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10dip" android:background="@drawable/roundcorners" android:padding="80dip"></WebView>
+</LinearLayout>

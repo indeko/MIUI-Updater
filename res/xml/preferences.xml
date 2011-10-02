@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" android:title="@string/settings">
+  <PreferenceCategory android:title="@string/settings">
+    <CheckBoxPreference android:key="check_init" android:title="@string/checkOnInit" android:summary="@string/checkOnInitSummary"></CheckBoxPreference>
+    <CheckBoxPreference android:key="force_md5" android:title="@string/checkMD5" android:summary="@string/checkMD5Summary"/>
+    <ListPreference android:key="folder_select" android:dialogTitle="@string/folder" android:title="@string/folder"></ListPreference>
+    <ListPreference android:key="recovery" android:dialogTitle="@string/recoveryInUse" android:title="@string/changeRecovery"></ListPreference>
+  </PreferenceCategory>
+</PreferenceScreen>

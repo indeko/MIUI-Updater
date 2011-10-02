@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:gravity="center_horizontal" android:padding="5dip">
+  		<TextView android:id="@+id/version_info" android:text="@string/versionNotAvailable" android:layout_width="fill_parent" android:layout_height="120dip" android:gravity="center_horizontal" android:textColor="#555" android:textSize="9pt" android:layout_marginTop="5dip"></TextView>
+  	</LinearLayout>
+    <WebView android:id="@+id/update_info" android:layout_width="match_parent" android:layout_height="fill_parent" android:layout_marginTop="40dip" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_marginBottom="100dip" android:layout_below="@id/version_info" android:background="@drawable/roundcorners" android:padding="80dip"></WebView>
+    <RelativeLayout android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="64dip" android:background="@drawable/bottombar" android:layout_gravity="fill_vertical" android:padding="4dip" >
+    	<Button android:id="@+id/chech_update_info" android:layout_width="180dip" android:maxWidth="180dip" android:layout_height="wrap_content" android:background="@drawable/download_button" android:text="@string/checkUpdate_button" android:textColor="#fff" android:gravity="center" android:layout_gravity="center" android:textSize="8pt" android:padding="2dip"></Button>
+    </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>
